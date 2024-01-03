@@ -1,0 +1,271 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2980b9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #E3D3E4;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation Styles */
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav a {
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+/* Home Page Section Styles */
+#home {
+    background-color: #3498db;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+
+#home h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #fff;
+    color: #3498db;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+/* About Section Styles */
+#about img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#about p {
+    font-size: 16px;
+}
+
+/* Courses Section Styles */
+#courses {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 80px 0;
+}
+
+.course {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.course h3 {
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px;
+    margin: 0;
+    font-size: 24px;
+}
+
+.course-content {
+    padding: 20px;
+}
+
+.course-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.course-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+
+.course-duration {
+    color: #555;
+}
+
+.course-enroll-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.course-enroll-button:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #home {
+        padding: 50px 0;
+    }
+
+    #home h1 {
+        font-size: 28px;
+    }
+
+    #home p {
+        font-size: 16px;
+    }
+
+    .cta-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    #about img {
+        margin-top: 10px;
+    }
+
+    #about p {
+        font-size: 14px;
+    }
+
+    #courses {
+        padding: 50px 0;
+    }
+
+    .course h3 {
+        font-size: 20px;
+        padding: 12px;
+    }
+
+    .course-description {
+        font-size: 16px;
+    }
+
+    .course-details {
+        font-size: 14px;
+    }
+
+    .course-enroll-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+/* Add this CSS if you want to style the modals */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.close-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+}
+
+/* Add this CSS to style the success message */
+.success-message {
+    display: none;
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+/* Navigation Styles */
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav a {
+    margin: 0 15px;
+    font-size: 16px;
+    color: #0393e7; /* Set the default text color */
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 1px solid #333; /* Add a border */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #0393e7; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+/* Responsive Navigation Styles */
+@media (max-width: 950px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 4px 0;
+    }
+}
